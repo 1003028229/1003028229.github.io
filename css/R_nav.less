@@ -1,0 +1,96 @@
+nav{
+    position: fixed;
+    top: 320px;
+    right: 30px;
+    width: 60px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #ccc;
+    z-index: 100;
+    background-color: #fff;
+    ul{
+        list-style: none;
+        li{
+            position: relative;
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #ccc;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: 16px ;
+            cursor: pointer;
+            .des{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0px;
+                left: 95px;
+                width: 250px;
+                height: 60px;
+                background-color: #1AD464;
+                color: #fff;
+                font-weight: bold;
+                transition: 2s;
+                opacity: 0.1;
+            }
+            .des1{
+                position: absolute;
+                top: 0px;
+                left: 130px;
+                width: 130px;
+                height: 150px;
+                z-index: 99;
+                box-shadow: 0 0 10px #ccc;
+                background-image: url(../img/R_nav/nav_06.png);
+                background-size: 80%;
+                background-repeat: no-repeat;
+                transition: 2s;
+                opacity: 0.1;
+                background-position: 15px 15px;
+                background-color: #fff;
+                p{
+                    position: absolute;
+                    left: 20px;
+                    bottom: 0px;
+                }
+            }
+        }
+        li:nth-child(1){
+            border-radius: 30px 30px 0 0 ; 
+            background-image: url(../img/R_nav/nav_01.png);
+        }
+        li:nth-child(2){
+            background-image: url(../img/R_nav/nav_02.png);
+        }
+        li:nth-child(3){
+            background-image: url(../img/R_nav/nav_03.png);
+        }
+        li:nth-child(4){
+            background-image: url(../img/R_nav/nav_04.png);
+        }
+        li:nth-child(5){
+            border-radius: 0 0 30px 30px; 
+            background-image: url(../img/R_nav/nav_05.png);
+            border-bottom: none;
+            overflow: hidden;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        li:hover .des{
+            opacity: 1;
+            left: -250px;
+        }
+        li:hover .des1{
+            left: -130px;
+            opacity: 1;
+        }
+        li:hover{
+            background-color: #1AD464;
+        }
+
+    }
+}

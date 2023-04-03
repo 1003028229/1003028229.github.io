@@ -1,0 +1,98 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 3px #ccc;
+  z-index: 998;
+  background-color: #fff;
+}
+header ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+}
+header ul .li1 {
+  text-align: right;
+  width: 15%;
+  margin-top: 20px;
+}
+header ul .li1 img {
+  width: 120px;
+  height: 30px;
+}
+header ul .li2 {
+  width: 50%;
+  margin-top: 25px;
+}
+header ul .li2 ul {
+  display: flex;
+  justify-content: space-around;
+}
+header ul .li2 ul li {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  color: gray;
+}
+header ul .li2 ul li ul {
+  display: block;
+  z-index: 999;
+  position: absolute;
+  top: 20px;
+  left: -35px;
+  flex-direction: column;
+  width: 150px;
+  height: 0px;
+  overflow: hidden;
+  transition: 2s;
+  background-color: #fff;
+}
+header ul .li2 ul li ul .first_one {
+  margin-top: 20px;
+}
+header ul .li2 ul li ul li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+header ul .li2 ul li ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: gray;
+}
+header ul .li2 ul li ul li:hover {
+  background-color: #EEEEEE;
+}
+header ul .li2 ul li:hover ul {
+  height: 220px;
+}
+header ul .li3 {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+header ul .li3 button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+header ul .li3 button:nth-of-type(1) {
+  margin-right: 5%;
+}
+header ul .li3 button:nth-of-type(2) {
+  background-color: #00CB42;
+  color: #fff;
+}
+header ul .li3 button:nth-of-type(1):hover {
+  background-color: #EFDAFC;
+}
+header ul .li3 button:nth-of-type(2):hover {
+  background-color: #23B065;
+}
+header ul i {
+  display: none;
+}

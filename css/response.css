@@ -1,0 +1,119 @@
+@media screen and (max-width: 800px) {
+  header ul .li1 {
+    margin-left: 20px;
+  }
+  header ul .li2 {
+    display: none;
+  }
+  header ul .li3 {
+    display: none;
+  }
+  header ul i {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section_one {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .section_one .section_one_left {
+    padding-left: 20px;
+    width: 100%;
+    height: 440px;
+    justify-content: flex-start;
+  }
+  .section_one .section_one_left .content {
+    width: 98%;
+    margin: 0;
+    margin-top: 100px;
+  }
+  .section_one .section_one_left .content h1 {
+    width: 230px;
+    font-size: 25px;
+  }
+  .section_one .section_one_left .content p {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .section_one .section_one_left .content button {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .section_one .section_one_right {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    height: 400px;
+    background-image: none;
+  }
+  .section_one .section_one_right video {
+    margin: 0;
+    width: 98%;
+  }
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .section_two .content {
+    width: 100%;
+  }
+  .section_two .content .content_left {
+    height: 0;
+    padding-bottom: 50%;
+  }
+  .section_two .content .content_left .radio_wrap {
+    width: 70%;
+    height: 80%;
+  }
+  .section_two .content .content_left .radio_wrap input {
+    display: none;
+  }
+  .section_two .content .content_left .radio_wrap label {
+    display: none;
+  }
+  .section_two .content .content_left .radio_wrap label + img {
+    left: 0px;
+  }
+  .section_two .content .content_left .radio_wrap input[type='radio']:checked + label + img {
+    width: 210%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section_two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section_two .title_wrap {
+    margin-top: 20px;
+  }
+  .section_two .content {
+    width: 100%;
+  }
+  .section_two .content .content_left {
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    background-color: red;
+    width: 50%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+  .section_two .content .content_left .radio_wrap input[type='radio']:checked + label + img {
+    width: 250%;
+    height: 80%;
+  }
+  .section_two .content .content_right {
+    width: 100%;
+    position: absolute;
+    top: 150px;
+  }
+  .section_two .content button {
+    bottom: -300px;
+  }
+}
