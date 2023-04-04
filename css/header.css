@@ -19,6 +19,8 @@ header ul .li1 {
 header ul .li1 img {
   width: 120px;
   height: 30px;
+object-fit: contain;
+
 }
 header ul .li2 {
   width: 50%;
