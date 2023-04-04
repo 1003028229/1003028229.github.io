@@ -17,10 +17,8 @@ header ul .li1 {
   margin-top: 10px;
 }
 header ul .li1 img {
-  width: 10%;
-  height: 10%;
-object-fit: contain;
-
+  max-width: 100%;
+  height: auto;
 }
 header ul .li2 {
   width: 50%;
